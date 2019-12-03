@@ -46,7 +46,7 @@ with open('input.data','r') as f:
     for k,v in wires.items():
         counter = 0
         for pos in v:
-            if pos in intersections: # Posible checkear repeticion de entradas
+            if pos in intersections:
                 distances[str(pos[0]) + str(pos[1])] += counter
 
             counter += 1
